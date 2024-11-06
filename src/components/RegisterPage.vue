@@ -130,7 +130,13 @@ export default {
         gender: this.gender
       };
       
-      fetch('http://localhost:3000/register', {
+      let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      fetch(`${baseURL}/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

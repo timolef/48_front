@@ -42,7 +42,13 @@ export default {
     async login() {
       try {
         // Envoi des informations de connexion au serveur
-        const response = await fetch('http://localhost:3000/login', {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        const response = await fetch(`${baseURL}/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

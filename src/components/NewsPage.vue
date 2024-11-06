@@ -142,7 +142,13 @@ export default {
       this.isAdmin = localStorage.getItem("isAdmin");
       console.log(this.isAdmin);
       try {
-        const response = await fetch('http://localhost:3000/posts');
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        const response = await fetch(`${baseURL}/posts`);
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des posts');
         }
@@ -164,7 +170,13 @@ export default {
     },
     async submitNewPost() {
       try {
-        const response = await fetch('http://localhost:3000/posts', {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        const response = await fetch(`${baseURL}/posts`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -204,7 +216,13 @@ export default {
     async submitEditPost() {
       console.log("post : ", this.editPost)
       try {
-        const response = await fetch(`http://localhost:3000/posts/${this.editPost.id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        const response = await fetch(`${baseURL}/posts/${this.editPost.id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json'
@@ -244,7 +262,13 @@ export default {
     },
     async deletePost(post) {
       try {
-        const response = await fetch(`http://localhost:3000/posts/${post.id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        const response = await fetch(`${baseURL}/posts/${post.id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json'

@@ -272,7 +272,13 @@ export default {
       }
     },
     deleteArticle(id) {
-      fetch(`http://localhost:3000/educative-resources/${id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      fetch(`${baseURL}/educative-resources/${id}`, {
         method: 'DELETE',
       })
       .then(response => {
@@ -294,7 +300,13 @@ export default {
       });
     },
     deleteOrganization(id) {
-      fetch(`http://localhost:3000/assistance-organizations/${id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      fetch(`${baseURL}/assistance-organizations/${id}`, {
         method: 'DELETE',
       })
       .then(response => {
@@ -316,7 +328,13 @@ export default {
       });
     },
     deleteGuide(id) {
-      fetch(`http://localhost:3000/prevention-support-guides/${id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      fetch(`${baseURL}/prevention-support-guides/${id}`, {
         method: 'DELETE',
       })
       .then(response => {
@@ -339,7 +357,13 @@ export default {
     },
     createArticle() {
       console.log(JSON.stringify(this.articleForm))
-  fetch('http://localhost:3000/educative-resources', {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+  fetch(`${baseURL}/educative-resources`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -374,7 +398,13 @@ export default {
     });
   },
   createGuide() {
-    fetch('http://localhost:3000/prevention-support-guides', {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    fetch(`${baseURL}/prevention-support-guides`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -407,7 +437,13 @@ export default {
     });
   },
   createOrganization() {
-    fetch('http://localhost:3000/assistance-organizations', {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    fetch(`${baseURL}/assistance-organizations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -442,7 +478,13 @@ export default {
   },
   updateGuide() {
     console.log(this.currentResource)
-    fetch(`http://localhost:3000/prevention-support-guides/${this.currentResource.id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    fetch(`${baseURL}/prevention-support-guides/${this.currentResource.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -509,7 +551,14 @@ export default {
         this.fetchAssistanceOrganizations();
       },
       fetchEducationalResources() {
-        fetch('http://localhost:3000/educative-resources')
+        
+        let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}/educative-resources`)
           .then(response => {
             if (!response.ok) {
               throw new Error('Erreur lors de la récupération des ressources éducatives');
@@ -528,7 +577,13 @@ export default {
           });
       },
       fetchPreventionSupportGuides() {
-        fetch('http://localhost:3000/prevention-support-guides')
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}/prevention-support-guides`)
           .then(response => {
             if (!response.ok) {
               throw new Error('Erreur lors de la récupération des guides de prévention');
@@ -547,7 +602,13 @@ export default {
       },
       updateOrganization() {
         console.log(this.currentResource)
-    fetch(`http://localhost:3000/assistance-organizations/${this.currentResource.id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    fetch(`${baseURL}/assistance-organizations/${this.currentResource.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -577,7 +638,13 @@ export default {
       },
       updateArticle() {
         console.log(this.currentResource)
-    fetch(`http://localhost:3000/educative-resources/${this.currentResource.id}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    fetch(`${baseURL}/educative-resources/${this.currentResource.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -606,7 +673,13 @@ export default {
     });
       },
       fetchAssistanceOrganizations() {
-        fetch('http://localhost:3000/assistance-organizations')
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}/assistance-organizations`)
           .then(response => {
             if (!response.ok) {
               throw new Error('Erreur lors de la récupération des organisations d\'assistance');

@@ -181,7 +181,14 @@ export default {
       this.confirmDeleteModal = true;
     },
     confirmDelete() {
-      const endpoint = this.deleteItemType === 'news' ? `http://localhost:3000/news/${this.deleteItemId}` : `http://localhost:3000/upcoming-events/${this.deleteItemId}`;
+      
+      let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      const endpoint = this.deleteItemType === 'news' ? `${baseURL}/news/${this.deleteItemId}` : `${baseURL}/upcoming-events/${this.deleteItemId}`;
 
       fetch(endpoint, { method: 'DELETE' })
         .then(response => {
@@ -219,7 +226,13 @@ export default {
   ,
     
   fetchLatestNews() {
-  fetch('http://localhost:3000/latest-news')
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+  fetch(`${baseURL}/latest-news`)
     .then(response => response.json())
     .then(data => {
       // Triez les actualités par date décroissante
@@ -230,7 +243,13 @@ export default {
     });
 },
     fetchUpcomingEvents() {
-      fetch('http://localhost:3000/upcoming-events')
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+      fetch(`${baseURL}/upcoming-events`)
         .then(response => response.json())
         .then(data => {
           this.upcomingEvents = data.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -251,8 +270,14 @@ export default {
             description: this.editNews.description
           })
         };
-
-        fetch(`http://localhost:3000/news/${this.editNews.id}`, requestOptions)
+        
+        let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}/news/${this.editNews.id}`, requestOptions)
           .then(response => {
             if (!response.ok) {
               throw new Error('Erreur lors de la mise à jour de l\'actualité');
@@ -317,8 +342,14 @@ export default {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(this.newEvent)
         };
-
-        fetch('http://localhost:3000/news', requestOptions)
+        
+        let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}http://localhost:3000/news`, requestOptions)
           .then(response => response.json())
           .then(data => {
             console.log(data)
@@ -349,8 +380,14 @@ export default {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(this.newEvent)
         };
-
-        fetch('http://localhost:3000/upcoming-events', requestOptions)
+        
+        let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+        fetch(`${baseURL}/upcoming-events`, requestOptions)
           .then(response => response.json())
           .then(data => {
             this.upcomingEvents.push(data);
