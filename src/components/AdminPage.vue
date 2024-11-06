@@ -89,8 +89,13 @@ export default {
     async deleteUser(user) {
         try {
             const userId = user.id; // Suppose que l'ID de l'utilisateur est stocké dans la propriété 'id'
-
-            const response = await fetch(`http://localhost:3000/users/${userId}`, {
+            let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+            const response = await fetch(`${baseURL}/users/${userId}`, {
                 method: 'DELETE'
             });
             
@@ -119,7 +124,13 @@ export default {
     saveUser() {
       
   const { id, firstname, name, email, pseudo, isAdmin } = this.editedUser;
-  const url = `http://localhost:3000/users/${id}`;
+  let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+  const url = `${baseURL}/users/${id}`;
   const userData = { firstname, name, email, pseudo, isAdmin };
   console.log(userData)
   fetch(url, {
@@ -165,7 +176,13 @@ export default {
     async fetchUsers() {
   try {
     const email = localStorage.getItem("email"); // Adresse e-mail à envoyer dans le corps de la requête
-    const response = await fetch('http://localhost:3000/users', {
+    let baseURL = null;
+            if (process.env.VUE_APP_NODE_ENV === "development") {
+                baseURL = process.env.VUE_APP_API_URL_LOCAL;
+            } else {
+                baseURL = process.env.VUE_APP_API_URL_PROD;
+            }
+    const response = await fetch(`${baseURL}/users`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

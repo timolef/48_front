@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <NavBar />
     <router-view/>
   </div>
 </template>
+<script>
+// Import de la barre de navigation personnalisée
+import NavBar from './components/NavBar.vue';
 
+export default {
+  components: {
+    NavBar
+  }
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

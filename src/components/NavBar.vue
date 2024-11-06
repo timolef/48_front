@@ -4,11 +4,11 @@
       <v-container fluid class="nav">
         <v-row align="center">
           <div class="logo" style="text-align: center;">
-            <img style="height: 95px;" src="./../assets/logo.png"/>
+            <img style="height: 45px;" src="./../assets/logo.png"/>
           </div>
           <!-- Élément gauche -->
-          <v-col cols="auto" class="mr-auto">
-            <h3 class="headline">Association 48 pour cent</h3>
+          <v-col cols="2" class="mr-auto">
+            <p class="headline">Association 48 pour cent</p>
           </v-col>
           <!-- Élément central (onglets) -->
           <v-col class="text-center" cols="8">
@@ -93,7 +93,7 @@ export default {
 .headline {
   color: #FFFFFF;
   text-align: center;
-  font-size: 13px !important;
+  font-size: 5px !important;
 }
 
 .icon-btn {
