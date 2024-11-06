@@ -93,7 +93,7 @@ export default {
 .headline {
   color: #FFFFFF;
   text-align: center;
-  font-size: 5px !important;
+  font-size: 13px !important;
 }
 
 .icon-btn {
