@@ -275,7 +275,7 @@ export default {
           }
         });
         if (!response.ok) {
-          throw new Error('Erreur lors de la suppression de la publication');
+          throw new Error('Erreur lors de la suppression de la publication !');
         }
         console.log('Publication supprimée avec succès');
         // Actualiser la liste des publications après la suppression
