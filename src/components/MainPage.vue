@@ -13,8 +13,8 @@
               <h1 class="yellow1 mt-12 display-1">Pas besoin de souffrir pour grandir !</h1>
               <v-card-actions>
                 <v-row justify="center" class="my-5">
-                  <v-btn color="#FEF598" class="mr-5" href="https://form.dragnsurvey.com/survey/r/0d2527c9" @click="getInvolved">Rejoignez-nous</v-btn>
-                  <v-btn color="#FEF598" class="don" href="https://www.helloasso.com/associations/association-48-pour-100/formulaires/1" @click="makeDonation">Faire un don</v-btn>
+                  <v-btn color="#FEF598" class="mr-5 action-buttons" href="https://form.dragnsurvey.com/survey/r/0d2527c9" @click="getInvolved">Rejoignez-nous</v-btn>
+                  <v-btn color="#FEF598" class="don action-buttons" href="https://www.helloasso.com/associations/association-48-pour-100/formulaires/1" @click="makeDonation">Faire un don</v-btn>
                 </v-row>
               </v-card-actions>
             </div>
@@ -349,7 +349,7 @@ export default {
             } else {
                 baseURL = process.env.VUE_APP_API_URL_PROD;
             }
-        fetch(`${baseURL}http://localhost:3000/news`, requestOptions)
+        fetch(`${baseURL}/news`, requestOptions)
           .then(response => response.json())
           .then(data => {
             console.log(data)
@@ -413,24 +413,107 @@ export default {
 </script>
 
 <style scoped>
+/* Container principal */
 #app {
   margin-top: 90px;
   background-color: #aedbdd;
+  font-family: Arial, sans-serif;
+}
+
+/* Boutons principaux */
+.action-buttons {
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 0 8px;
+  padding: 10px 20px;
+  background-color: #fef598;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+.action-buttons:hover {
+  background-color: #fddb3a;
+}
+
+/* Carte principale avec image de fond */
+.card-main {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .card-background {
-  position: absolute; /* Position absolue par rapport à la carte */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/back.png'); /* Image en fond */
-  background-size: cover; /* Redimensionne l'image pour couvrir toute la carte */
-  background-position: center; /* Centre l'image horizontalement et verticalement */
-  opacity: 0.7; /* Opacité de l'image de fond (ajustable selon vos besoins) */
+  background-image: url('../assets/back.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 1;
 }
-.card-main {
-  padding: 20px;
+.card-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fef598;
 }
+
+/* Titres et slogans */
+h1.display-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #fef598;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+h2.headline {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #26AAAF;
+  margin-bottom: 1rem;
+}
+
+/* Boutons de création */
+.buttonCreate {
+  background-color: #26AAAF;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.buttonCreate:hover {
+  background-color: #1b8c92;
+}
+.buttonCreate .v-icon {
+  color: #fff;
+}
+
+/* Alertes */
+.fixed-bottom {
+  width: 50%;
+  margin: auto;
+  background-color: #26AAAF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Icones de modification et de suppression */
+.v-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.v-icon:hover {
+  color: #007bff;
+}
+
+/* Espace des sections */
 .my-10 {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -439,31 +522,18 @@ export default {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.img-back {
-  width: 100%;
-  background-size: cover; /* Redimensionne l'image pour couvrir toute la carte */
-  background-position: center;
-  position: relative;
-}
-.display-1,
-.subtitle-1 {
-  position: relative; /* Positionnement relatif pour placer le texte par-dessus l'image */
-  z-index: 1; /* Assurez-vous que le texte est au-dessus de la superposition */
-}
-.don{
-  font-size: 17px;
-}
+
+/* Texte et couleurs */
 .yellow1 {
   color: #FEF598;
 }
-.buttonCreate {
-  color: white;
+.don {
+  font-size: 17px;
 }
-.fixed-bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999; /* Assurez-vous que l'alerte est au-dessus du reste du contenu */
+
+/* Modale */
+.v-dialog .v-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 </style>
