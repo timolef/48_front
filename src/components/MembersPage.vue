@@ -36,7 +36,7 @@ export default {
         { name: 'Maxence', role: 'Secrétaire général', photo: 'maxence.jpg', groupe: 'Administration' },
         { name: 'Valentine', role: 'Co-secrétaire général', photo: 'valentine.jpg', groupe: 'Administration' },
         { name: 'Mathilde', role: 'Trésorière', photo: 'mathilde.jpg', groupe: 'Administration' },
-        { name: 'Églantine', role: 'Responsable communication', photo: 'eglantine.jpg', groupe: 'Pôle communication' },
+        { name: 'Eglantine', role: 'Responsable communication', photo: 'eglantine.jpg', groupe: 'Pôle communication' },
         { name: 'Romane', role: 'Co-responsable communication', photo: 'romane.jpg', groupe: 'Pôle communication' },
         { name: 'Timothée F.', role: 'Responsable partenariat', photo: 'timotheef.jpg', groupe: 'Pôle partenariats' },
         { name: 'Quitterie', role: 'Membre partenariat', photo: 'quitterie.jpg', groupe: 'Pôle partenariats' },
