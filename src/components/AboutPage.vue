@@ -68,7 +68,7 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <p class="category-content">Nous établirons une présence en ligne en créant des comptes sur divers réseaux sociaux. Ces plateformes deviendront des espaces de bienveillance pour les jeunes, où nous aborderons et démystifierons divers sujets liés à la vie scolaire, à la santé mentale et aux relations interpersonnelles. Les élèves pourront poser des questions, partager leurs expériences et recevoir un soutien en ligne.</p>
+              <p class="category-content">À ce stade, nous avons créé nos réseaux sociaux et développé une présence en ligne notamment grâce à nos podcast particulièrement sur Instagram, et plus récemment notre Tiktok. Je suis aussi allée a l'Assemblé Nationale en mai 2024 au nom de l'association afin de discuter de ces sujets. Nous avons réussi à obtenir une subvention de 1500 euros afin d'acheter du matériel etc... et avons été interviewé par un média afin de parler de notre projet.</p>
             </v-card-text>
           </v-card>
           <v-card class="card">
