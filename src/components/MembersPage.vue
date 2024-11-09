@@ -36,12 +36,12 @@ export default {
         { name: 'Maxence', role: 'Secrétaire général', photo: 'maxence.jpg', groupe: 'Administration' },
         { name: 'Valentine', role: 'Co-secrétaire général', photo: 'valentine.jpg', groupe: 'Administration' },
         { name: 'Mathilde', role: 'Trésorière', photo: 'mathilde.jpg', groupe: 'Administration' },
-        { name: 'Romane', role: 'Responsable communication', photo: 'romane.jpg', groupe: 'Pôle communication' },
-        { name: 'Églantine', role: 'Co-responsable communication', photo: 'eglantine.jpg', groupe: 'Pôle communication' },
+        { name: 'Églantine', role: 'Responsable communication', photo: 'eglantine.jpg', groupe: 'Pôle communication' },
+        { name: 'Romane', role: 'Co-responsable communication', photo: 'romane.jpg', groupe: 'Pôle communication' },
         { name: 'Timothée F.', role: 'Responsable partenariat', photo: 'timotheef.jpg', groupe: 'Pôle partenariats' },
         { name: 'Quitterie', role: 'Membre partenariat', photo: 'quitterie.jpg', groupe: 'Pôle partenariats' },
-        { name: 'Maxence', role: 'Responsable podcast', photo: 'maxence.jpg', groupe: 'Pôle podcasts' },
-        { name: 'Nicolas', role: 'Membre podcast', photo: 'nicolas.jpg', groupe: 'Pôle podcasts' },
+        { name: 'Nicolas', role: 'Responsable podcast', photo: 'nicolas.jpg', groupe: 'Pôle podcasts' },
+        { name: 'Maxence', role: 'Membre podcast', photo: 'maxence.jpg', groupe: 'Pôle podcasts' },
         { name: 'Maissa', role: 'Membre podcast', photo: 'maissa.jpg', groupe: 'Pôle podcasts' },
         { name: 'Timothée L.', role: 'Responsable site web', photo: 'timotheel.jpg', groupe: 'Pôle site web' },
       ]
@@ -101,6 +101,7 @@ export default {
   font-size: 1.25em;
   font-weight: 600;
   color: #333;
+  text-align: center;
   margin-top: 10px;
 }
 
@@ -124,7 +125,6 @@ export default {
   background-color: #aedbdd;
   align-items: center;
   text-align: center;
-  display: flex;
   flex-direction: column;
 }
 

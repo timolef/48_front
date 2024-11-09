@@ -528,7 +528,6 @@ h2.headline {
   color: #FEF598;
 }
 .don {
-  font-size: 17px;
 }
 
 /* Modale */

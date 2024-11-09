@@ -8,7 +8,7 @@
           </div>
           <!-- Élément gauche -->
           <v-col cols="2" class="mr-auto">
-            <p class="headline">Association 48 pour cent</p>
+            <p class="headline">Association 48 pour 100</p>
           </v-col>
           <!-- Élément central (onglets) -->
           <v-col class="text-center" cols="8">
@@ -49,10 +49,10 @@ export default {
       isAdmin: false,
       tabs: [
         { text: 'Accueil', link: '/home' },
+        { text: 'à propos', link: '/about' },
         { text: 'Publications', link: '/news' },
         { text: 'Nous contacter', link: '/contact' },
         { text: 'Ressources', link: '/ressources' },
-        { text: 'A propos', link: '/about' },
         { text: 'Nos membres', link: '/members' },
       ]
     };

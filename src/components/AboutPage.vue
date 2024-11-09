@@ -49,24 +49,7 @@
 </p>
             </v-card-text>
           </v-card>
-          <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
-              <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Quelle a été la partie la plus dure pendant la création de l'association ?</h2>
-            </v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <p class="category-content">La partie la plus difficile a été la remise en question constante : savoir quand se faire confiance et quand écouter les conseils et critiques extérieurs. Il a également été crucial de créer un environnement où tous les membres de l'association se sentent écoutés, valorisés et soutenus. Cet équilibre fragile entre confiance en soi et ouverture aux autres a été un véritable défi à surmonter.</p>
-            </v-card-text>
-          </v-card>
-          <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
-              <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Quel est le meilleur souvenir que tu as par rapport à l'asso ?</h2>
-            </v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <p class="category-content">Mon meilleur souvenir reste le jour où j'ai reçu la confirmation officielle de la création de l'association. Après de longues heures consacrées aux démarches administratives, savoir que nous pouvions enfin concrétiser nos ambitions et lancer pleinement nos actions a été un moment de pure joie et de fierté. Cela a marqué le début d'une aventure, avec la communication sur les réseaux sociaux et la mise en place de nos projets, nous permettant de commencer à faire la différence dans la vie des jeunes touchés par le harcèlement scolaire.</p>
-            </v-card-text>
-          </v-card>
+          
           <!-- Ajoutez d'autres cartes pour la fondation ici -->
         </v-tab-item>
         <v-tab-item>
