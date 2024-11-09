@@ -103,6 +103,7 @@ export default {
   color: #333;
   text-align: center;
   margin-top: 10px;
+  display: block;
 }
 
 .member-role {
