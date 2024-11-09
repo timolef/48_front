@@ -108,7 +108,11 @@ export default {
 
 <style scoped>
 .card {
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
   
 }
 .headline {
@@ -128,8 +132,11 @@ export default {
   margin-bottom: 10px;
   
 }
-.category-content {
-  font-size: 17px;
-  font-family: Helvetica, Verdana, sans-serif;
+.category-content {font-size: 18px;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #5a5a5a;
+  padding: 15px;
+  border-radius: 4px;
 }
 </style>
