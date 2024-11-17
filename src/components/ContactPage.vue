@@ -4,13 +4,13 @@
         <v-row class="mt-4">
           <v-col cols="12" md="6">
             <v-card>
-              <v-card-title class="headline">Formulaire de contact</v-card-title>
+              <v-card-title class="headline">Formulaire de contact (en cours de création)</v-card-title>
               <v-card-text>
                 <v-form @submit.prevent="submitForm">
                   <v-text-field v-model="name" label="Nom" required></v-text-field>
                   <v-text-field v-model="email" label="Email" required></v-text-field>
                   <v-textarea  v-model="message" rows="5" class="messageZone" label="Message" required></v-textarea>
-                  <v-btn color="#26AAAF" dark large type="submit">Envoyer</v-btn>
+                  <v-btn color="#26AAAF" dark large disabled type="submit">Envoyer</v-btn>
                 </v-form>
               </v-card-text>
             </v-card>
