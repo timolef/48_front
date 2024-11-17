@@ -21,7 +21,7 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <p class="category-content">L'idée de créer 48% m'est venue lors d'un projet solidaire au Cambodge avec l'association "Toutes à l'école" de Tina Kieffer. Pendant deux mois et demi, j'ai été témoin de l'impact positif de l'éducation et du soutien sur les jeunes filles. Cette expérience a été si enrichissante que, de retour en France, j'ai ressenti le besoin impérieux de continuer à aider et à faire une différence, cette fois-ci en m'attaquant au fléau du harcèlement scolaire.</p>
+              <p class="category-content">"L'idée de créer 48% m'est venue lors d'un projet solidaire au Cambodge avec l'association "Toutes à l'école" de Tina Kieffer. Pendant deux mois et demi, j'ai été témoin de l'impact positif de l'éducation et du soutien sur les jeunes filles. Cette expérience a été si enrichissante que, de retour en France, j'ai ressenti le besoin impérieux de continuer à aider et à faire une différence, cette fois-ci en m'attaquant au fléau du harcèlement scolaire." <br/><br/> - Ambre (Présidente)</p>
             </v-card-text>
           </v-card>
           <v-card class="card">
@@ -40,7 +40,7 @@
             <v-divider></v-divider>
             <v-card-text>
               <p class="category-content">Notre association est structurée autour de plusieurs pôles, chacun ayant un rôle crucial dans la réalisation de notre mission.
-<br/>- Pôle Intervention : Ce pôle est au cœur de notre action sur le terrain. Il organise et met en œuvre les interventions dans les établissements scolaires, sensibilise les élèves au harcèlement et anime les groupes de parole et de soutien.
+<br/>- Pôle Intervention : Ce pôle est au cœur de notre action sur le terrain. Il compte organiser et mettre en œuvre les interventions dans les établissements scolaires, sensibiliser les élèves au harcèlement et animer les groupes de parole et de soutien.
 <br/>- Pôle Communication : Essentiel pour diffuser notre message, ce pôle gère nos comptes sur les réseaux sociaux, crée du contenu engageant et bienveillant, et s'assure que notre mission atteint un large public.
 <br/>- Pôle Site Web : Ce pôle développe et maintient notre présence en ligne. Le site web est une vitrine de notre action et une ressource précieuse pour ceux qui cherchent à comprendre le harcèlement scolaire et à trouver de l'aide.
 <br/>- Pôle Partenariat : Ce pôle établit des relations stratégiques avec d'autres organisations, écoles et professionnels de la santé mentale pour élargir notre impact et renforcer notre réseau de soutien.
@@ -77,7 +77,7 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <p class="category-content">La fondation prévoit d'organiser des interventions dans les collèges pour sensibiliser les élèves au problème du harcèlement scolaire. Ces interventions seront interactives et axées sur la prévention, visant à encourager les élèves à reconnaître les signes de harcèlement et à prendre des mesures pour le prévenir. Par exemple, des mises en scène et des discussions interactives permettront de comprendre les conséquences du harcèlement sur les victimes et d'encourager les harceleurs à réfléchir à leurs actions.</p>
+              <p class="category-content">L'association prévoit d'organiser des interventions dans les collèges pour sensibiliser les élèves au problème du harcèlement scolaire. Ces interventions seront interactives et axées sur la prévention, visant à encourager les élèves à reconnaître les signes de harcèlement et à prendre des mesures pour le prévenir. Par exemple, des mises en scène et des discussions interactives permettront de comprendre les conséquences du harcèlement sur les victimes et d'encourager les harceleurs à réfléchir à leurs actions.</p>
             </v-card-text>
           </v-card>
           <v-card class="card">
@@ -86,7 +86,7 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <p class="category-content">La fondation prévoit de se rendre dans les collèges pour créer des groupes de parole et de soutien. Ces groupes offriront un espace sûr où les élèves pourront s'exprimer librement sur leurs expériences de harcèlement, leurs peurs et leurs préoccupations. Notre objectif est d'établir des services de consultation psychologique dans les collèges, accessibles aux élèves pendant la journée d'intervention.</p>
+              <p class="category-content">L'association'prévoit de se rendre dans les collèges pour créer des groupes de parole et de soutien. Ces groupes offriront un espace sûr où les élèves pourront s'exprimer librement sur leurs expériences de harcèlement, leurs peurs et leurs préoccupations. Notre objectif est d'établir des services de consultation psychologique dans les collèges, accessibles aux élèves pendant la journée d'intervention.</p>
             </v-card-text>
           </v-card>
           <!-- Ajoutez d'autres cartes pour l'association ici -->
@@ -130,9 +130,10 @@ export default {
 }
 .category-divider {
   margin-bottom: 10px;
-  
 }
-.category-content {font-size: 18px;
+
+.category-content {
+  font-size: 18px;
   line-height: 1.6;
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #5a5a5a;

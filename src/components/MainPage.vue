@@ -10,7 +10,7 @@
             <div class="card-background"></div>
             <!-- Contenu texte -->
             <div class="card-content">
-              <h1 class="yellow1 mt-12 display-1">Pas besoin de souffrir pour grandir !</h1>
+              <h1 class="yellow1 mt-12 display-1">Mettre des mots sur les maux !</h1>
               <v-card-actions>
                 <v-row justify="center" class="my-5">
                   <v-btn color="#FEF598" class="mr-5 action-buttons" href="https://form.dragnsurvey.com/survey/r/0d2527c9" @click="getInvolved">Rejoignez-nous</v-btn>
