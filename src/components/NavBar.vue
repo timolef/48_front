@@ -51,9 +51,9 @@ export default {
         { text: 'Accueil', link: '/home' },
         { text: 'à propos', link: '/about' },
         { text: 'Publications', link: '/news' },
-        { text: 'Nous contacter', link: '/contact' },
-        { text: 'Ressources', link: '/ressources' },
         { text: 'Nos membres', link: '/members' },
+        { text: 'Ressources', link: '/ressources' },
+        { text: 'Nous contacter', link: '/contact' },
       ]
     };
   },

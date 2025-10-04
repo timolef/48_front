@@ -7,7 +7,7 @@
 
         <v-tab-item>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Pourquoi le nom 48% ?</h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -16,7 +16,7 @@
             </v-card-text>
           </v-card>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - D'où t'es venue l'idée de cette association ?</h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -25,7 +25,7 @@
             </v-card-text>
           </v-card>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Quel est le but de 48% ?</h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -33,28 +33,13 @@
               <p class="category-content">Le but principal de 48% est de lutter activement contre le harcèlement scolaire, les problèmes de santé mentale et en démystifant différents sujets. Nous souhaitons sensibiliser, soutenir, et intervenir de manière holistique pour aider les élèves à comprendre, reconnaître, et agir face au harcèlement scolaire. En impliquant directement les étudiants et en collaborant avec les écoles et les professionnels de la santé mentale, nous croyons fermement en notre capacité à faire une différence significative.</p>
             </v-card-text>
           </v-card>
-          <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
-              <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Quels sont les différents pôles de l'association 48% ?</h2>
-            </v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <p class="category-content">Notre association est structurée autour de plusieurs pôles, chacun ayant un rôle crucial dans la réalisation de notre mission.
-<br/>- Pôle Intervention : Ce pôle est au cœur de notre action sur le terrain. Il compte organiser et mettre en œuvre les interventions dans les établissements scolaires, sensibiliser les élèves au harcèlement et animer les groupes de parole et de soutien.
-<br/>- Pôle Communication : Essentiel pour diffuser notre message, ce pôle gère nos comptes sur les réseaux sociaux, crée du contenu engageant et bienveillant, et s'assure que notre mission atteint un large public.
-<br/>- Pôle Site Web : Ce pôle développe et maintient notre présence en ligne. Le site web est une vitrine de notre action et une ressource précieuse pour ceux qui cherchent à comprendre le harcèlement scolaire et à trouver de l'aide.
-<br/>- Pôle Partenariat : Ce pôle établit des relations stratégiques avec d'autres organisations, écoles et professionnels de la santé mentale pour élargir notre impact et renforcer notre réseau de soutien.
-<br/>- Pôle Trésorerie : Indispensable à la bonne gestion de l'association, ce pôle assure la santé financière de 48%, gérant les fonds avec transparence et en cherchant des financements pour soutenir nos activités.
-<br/>- Pôle Podcast : Enfin, le pôle podcast, qui est une extension de notre mission éducative et de sensibilisation. À travers ce média, nous partageons des histoires, des expériences et des discussions approfondies, offrant une autre plateforme pour éduquer et inspirer au changement.
-</p>
-            </v-card-text>
-          </v-card>
+          
           
           <!-- Ajoutez d'autres cartes pour la fondation ici -->
         </v-tab-item>
         <v-tab-item>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-school</v-icon> - Notre Mission</h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -63,7 +48,7 @@
             </v-card-text>
           </v-card>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-instagram</v-icon> - Création de Comptes sur les Réseaux Sociaux</h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -72,7 +57,7 @@
             </v-card-text>
           </v-card>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Interventions de Sensibilisation </h2>
             </v-card-title>
             <v-divider></v-divider>
@@ -81,12 +66,28 @@
             </v-card-text>
           </v-card>
           <v-card class="card">
-            <v-card-title style="text-align: center; width: 1000px">
+            <v-card-title style="text-align: left !important; width: 1000px">
               <h2 class="category-title"><v-icon>mdi-account-group</v-icon> - Groupes de Parole et de Soutien dans les Collèges </h2>
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <p class="category-content">L'association'prévoit de se rendre dans les collèges pour créer des groupes de parole et de soutien. Ces groupes offriront un espace sûr où les élèves pourront s'exprimer librement sur leurs expériences de harcèlement, leurs peurs et leurs préoccupations. Notre objectif est d'établir des services de consultation psychologique dans les collèges, accessibles aux élèves pendant la journée d'intervention.</p>
+            </v-card-text>
+          </v-card>
+          <v-card class="card">
+            <v-card-title style="text-align: left; width: 1000px">
+              <h2 class="category-title"><v-icon>mdi-bullhorn</v-icon> - Quels sont les différents pôles de l'association 48% ?</h2>
+            </v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <p class="category-content">Notre association est structurée autour de plusieurs pôles, chacun ayant un rôle crucial dans la réalisation de notre mission.
+<br/>- <strong>Pôle Intervention :</strong> Ce pôle est au cœur de notre action sur le terrain. Il compte organiser et mettre en œuvre les interventions dans les établissements scolaires, sensibiliser les élèves au harcèlement et animer les groupes de parole et de soutien.
+<br/>- <strong>Pôle Communication :</strong> Essentiel pour diffuser notre message, ce pôle gère nos comptes sur les réseaux sociaux, crée du contenu engageant et bienveillant, et s'assure que notre mission atteint un large public.
+<br/>- <strong>Pôle Site Web :</strong> Ce pôle développe et maintient notre présence en ligne. Le site web est une vitrine de notre action et une ressource précieuse pour ceux qui cherchent à comprendre le harcèlement scolaire et à trouver de l'aide.
+<br/>- <strong>Pôle Partenariat :</strong> Ce pôle établit des relations stratégiques avec d'autres organisations, écoles et professionnels de la santé mentale pour élargir notre impact et renforcer notre réseau de soutien.
+<br/>- <strong>Pôle Trésorerie :</strong> Indispensable à la bonne gestion de l'association, ce pôle assure la santé financière de 48%, gérant les fonds avec transparence et en cherchant des financements pour soutenir nos activités.
+<br/>- <strong>Pôle Podcast :</strong> Enfin, le pôle podcast, qui est une extension de notre mission éducative et de sensibilisation. À travers ce média, nous partageons des histoires, des expériences et des discussions approfondies, offrant une autre plateforme pour éduquer et inspirer au changement.
+</p>
             </v-card-text>
           </v-card>
           <!-- Ajoutez d'autres cartes pour l'association ici -->
@@ -112,6 +113,7 @@ export default {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  text-align: left !important;
   transition: box-shadow 0.3s ease-in-out;
   
 }

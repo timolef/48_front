@@ -39,8 +39,8 @@
             <v-card-subtitle>{{ formatDate(news.date) }}</v-card-subtitle>
             <v-card-text>{{ news.description }}</v-card-text>
             <v-icon v-if="isAdmin == 1" @click="openEditDialog(news)" class="ml-8 mb-4 mr-2" color="blue">
-  mdi-pencil
-</v-icon>
+            mdi-pencil
+          </v-icon>
             <v-btn icon v-if="isAdmin == 1" class="buttonCreate ml-3 mb-3 mt-3" @click="deleteEvent('news', news.id)"><v-icon class="mr-2" color="red">
                   mdi-delete
                 </v-icon></v-btn>
