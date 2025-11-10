@@ -15,6 +15,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/home'  // ou tu peux mettre directement la même component
+  },
+  {
     path: '/home',
     name: 'MainPage',
     component: MainPage,
