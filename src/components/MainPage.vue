@@ -10,7 +10,7 @@
             <div class="card-background"></div>
             <!-- Contenu texte -->
             <div class="card-content">
-              <h1 class="yellow1 mt-12 display-1">ASSOCIATION 48%</h1>
+              <h1 class="yellow1 mt-12 display-1">ASSOCIATION 48 POUR 100</h1>
               <h1 class="yellow1 mt-12 display-1">Mettre des mots sur les maux !</h1>
               <v-card-actions>
                 <v-row justify="center" class="my-5">
